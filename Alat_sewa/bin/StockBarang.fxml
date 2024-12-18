@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SBController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="-25.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Label layoutX="227.0" layoutY="9.0" text="Stock Barang">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="26.0" layoutY="218.0" prefHeight="152.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="idBarangColumn" prefWidth="75.0" text="Id Barang" />
+          <TableColumn fx:id="merkBarangColumn" prefWidth="112.66665649414062" text="Merk Barang" />
+            <TableColumn fx:id="namaAlatColumn" prefWidth="75.0" text="Nama Alat" />
+            <TableColumn fx:id="hargaBarangColumn" prefWidth="106.6666259765625" text="Harga Barang" />
+            <TableColumn fx:id="stockColumn" prefWidth="100.0" text="Jumlah Stock" />
+            <TableColumn fx:id="waktuColumn" prefWidth="90.0" text="Waktu" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="49.0" text="Id Barang :" />
+      <Label layoutX="385.0" layoutY="49.0" text="Merk Barang" />
+      <Label layoutX="203.0" layoutY="49.0" text="Nama Alat" />
+      <Label layoutX="24.0" layoutY="102.0" text="Harga Barang/hari" />
+      <TextField fx:id="idBarangField" layoutX="24.0" layoutY="69.0" />
+      <TextField fx:id="merkBarangField" layoutX="386.0" layoutY="69.0" />
+      <TextField fx:id="namaAlatField" layoutX="203.0" layoutY="69.0" />
+      <TextField fx:id="hargaBarangField" layoutX="24.0" layoutY="118.0" />
+      <Button fx:id="submitButton" layoutX="515.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="25.0" prefWidth="68.0" text="Submit" />
+      <Button fx:id="kembaliButton" layoutX="449.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleKembali" text="Kembali" />
+      <Label layoutX="203.0" layoutY="102.0" text="Stock " />
+      <TextField fx:id="stockField" layoutX="202.0" layoutY="118.0" prefHeight="25.0" prefWidth="41.0" />
+      <Button fx:id="hapusButton" layoutX="19.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleHapus" text="Hapus" />
+   </children>
+</AnchorPane>

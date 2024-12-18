@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Label layoutX="249.0" layoutY="21.0" text="Data Administrator" />
+            <Label layoutX="39.0" layoutY="45.0" text="ID Admin" />
+            <Label layoutX="35.0" layoutY="108.0" text="Password" />
+            <Label layoutX="222.0" layoutY="108.0" text="Email" />
+            <Label layoutX="222.0" layoutY="45.0" text="Username" />
+            
+            <TextField fx:id="idAdminTextField" layoutX="35.0" layoutY="68.0" />
+            <TextField fx:id="usernameTextField" layoutX="222.0" layoutY="68.0" />
+            <TextField fx:id="emailTextField" layoutX="222.0" layoutY="125.0" />
+            <TextField fx:id="passwordTextField" layoutX="35.0" layoutY="125.0" />
+            
+            <Button fx:id="submitButton" layoutX="525.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+            <Button fx:id="kembaliButton" layoutX="456.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleKembali" text="Kembali" />
+         </children>
+      </Pane>
+      <TableView fx:id="adminTableView" layoutX="29.0" layoutY="208.0" prefHeight="156.0" prefWidth="541.0">
+        <columns>
+          <TableColumn fx:id="idAdminColumn" prefWidth="75.0" text="ID Admin" />
+          <TableColumn fx:id="usernameColumn" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="passwordColumn" prefWidth="173.3333282470703" text="Password" />
+            <TableColumn fx:id="emailColumn" prefWidth="215.99996948242188" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="hapusButton" layoutX="12.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleHapus" text="Hapus" />
+      <Button fx:id="updButton" layoutX="535.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006bd0" height="400.0" stroke="#006ce6" strokeType="INSIDE" width="200.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="textFieldUsername" layoutX="297.0" layoutY="162.0" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="348.0" layoutY="73.0" prefHeight="57.0" prefWidth="155.0" text="Administrator " textFill="#f66f0e">
+         <font>
+            <Font name="MT Extra" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="164.0" text="Username :" textFill="#ed1c1c" />
+      <Label layoutX="225.0" layoutY="210.0" prefHeight="17.0" prefWidth="59.0" text="Password :" />
+      <Button layoutX="412.0" layoutY="265.0" mnemonicParsing="false" onAction="#LoginFunction" text="Login" />
+      <PasswordField fx:id="textFieldPassword" layoutX="297.0" layoutY="206.0" prefHeight="25.0" prefWidth="277.0" />
+   </children>
+</AnchorPane>
